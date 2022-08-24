@@ -1,4 +1,14 @@
 $(document).ready(function () {
+
+  const queryString = window.location;
+  const url = new URL(queryString);
+  const untuk = url.searchParams.get("untuk");
+  
+   if (untuk) {
+     $(".mobile-title").html(untuk);
+     $("#nama").val(untuk);
+  }
+
   $(".instagram-effects").slick({
     dots: true,
     slidesToShow: 2,
