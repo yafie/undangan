@@ -710,19 +710,6 @@ li span {
     border-radius: 10px;
 }
 
-@media all and (max-width: 768px) {
-    h1 {
-        font-size: calc(1.5rem * var(--smaller));
-    }
-    li {
-        font-size: calc(1.125rem * var(--smaller));
-    }
-    li span {
-        font-size: calc(3.375rem * var(--smaller));
-    }
-}
-
-
 /* radio button css */
 
 input[type='radio']:after {
@@ -756,4 +743,46 @@ input[type='radio']:checked:after {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     ;
+}
+
+/* RESPONSIVE */
+
+
+/* Extra large devices (laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {
+  .content-data {
+    margin-top: -230px;
+  }
+}
+
+/* Large devices (tabs, 992px and down) */
+@media only screen and (max-width: 992px) {
+  .separator {
+      display: none;
+    }
+    .mobile-separator {
+      width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+
+  h1 {
+        font-size: calc(1.5rem * var(--smaller));
+    }
+    li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+    li span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .end-content {
+    margin-top: -220px;
+  }
 }
