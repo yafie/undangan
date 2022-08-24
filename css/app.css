@@ -407,6 +407,11 @@ a.btn-white:hover {
     font-size: 12px;
 }
 
+#pay-button:hover {
+    background-color: #E4D3CD;
+    transition: all 0.3s ease;
+}
+
 .w3-modal {
     z-index: 999 !important;
     background-color: rgba(0, 0, 0, 0.7);
@@ -506,6 +511,11 @@ span.w3-button:hover {
     border-radius: 50%;
     padding-top: 10px;
     background-color: #fff;
+}
+
+.music-control:hover {
+    background-color: #E4D3CD;
+    transition: all 0.3s ease;
 }
 
 .sound-on {
@@ -717,6 +727,7 @@ span.w3-button:hover {
 
 .btn-ig:hover {
     color: #E4D3CD;
+    transition: all 0.3s ease;
 }
 
 
@@ -886,11 +897,17 @@ input[type='radio']:checked:after {
         line-height: 16px;
         letter-spacing: 0.15em;
         padding: 15px 30px;
-        border-radius: 22.5px;
+        border-radius: 300px;
         color: #FFFFFF;
         border: 2px solid #FFFFFF;
         background: transparent;
         margin-bottom: 25px;
+        cursor: pointer;
+    }
+    .buka-udangan:hover {
+        background: #fff;
+        color: #575757;
+        transition: all 0.3s ease;
     }
     .main-img {
         z-index: 2;
