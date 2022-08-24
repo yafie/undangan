@@ -352,8 +352,9 @@ a.btn-white:hover {
   border-radius: 12px;
   color: #fff;
   padding: 5px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
+  margin-left: 10px;
 }
 
 .t-hadir {
@@ -362,8 +363,9 @@ a.btn-white:hover {
   border-radius: 12px;
   color: #fff;
   padding: 5px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
+  margin-left: 10px;
 }
 
 #pay.float {
@@ -677,7 +679,7 @@ li {
 li span {
     display: block;
     font-size: 3.5rem;
-    padding: 40px 0;
+    padding: 10px 0;
 }
 
 .emoji {
@@ -727,7 +729,7 @@ input[type='radio']:after {
     width: 15px;
     height: 15px;
     border-radius: 15px;
-    /* top: -2px; */
+    top: -2px;
     left: -1px;
     position: relative;
     background-color: #C9C9C9;
@@ -743,7 +745,7 @@ input[type='radio']:checked:after {
     width: 15px;
     height: 15px;
     border-radius: 15px;
-    /* top: -2px; */
+    top: -2px;
     left: -1px;
     position: relative;
     background-color: #D7AF9F;
