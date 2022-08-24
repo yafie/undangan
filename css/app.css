@@ -4,7 +4,8 @@
     src: url("../font/tropical_summer_signature-webfont.woff2") format("woff2");
 }
 
-html, body {
+html,
+body {
     font-family: sans-serif;
     background-color: #ffffff !important;
     font-family: "Work Sans";
@@ -90,7 +91,7 @@ html, body {
     width: auto;
     padding: 0;
     left: auto;
-    right: 10px;
+    right: 20px;
     bottom: 40%;
 }
 
@@ -108,7 +109,7 @@ html, body {
 }
 
 .wrapper-bar ul li {
-  display: inline;
+    display: inline;
 }
 
 .wrapper-bar ul li a {
@@ -121,11 +122,11 @@ html, body {
 }
 
 .bar-icon {
-  padding: 7px;
+    padding: 7px;
 }
 
 .add-shadow {
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
 }
 
 .the-wedding-title {
@@ -239,6 +240,11 @@ html, body {
     bottom: 0;
 }
 
+.pangkat {
+    top: -0.7em;
+    font-size: 50%;
+}
+
 .mt-1 {
     margin: 1rem 0;
 }
@@ -248,14 +254,14 @@ html, body {
 }
 
 .title-content {
-    margin: 2rem 0;
+    margin: 2rem 0 4rem 0;
     font-weight: 600;
     line-height: 16px;
 }
 
 a.save-date {
     width: 311px;
-    margin: 2rem 0;
+    margin: 0 0 2rem 0;
     padding: 21px 0;
     font-size: 24px;
     line-height: 28px;
@@ -318,6 +324,14 @@ a.btn-white:hover {
     margin-top: 1rem;
 }
 
+.btn-click {
+    font-weight: 500;
+    letter-spacing: normal;
+    cursor: pointer;
+    position: relative;
+    bottom: 2px;
+}
+
 .name-doa {
     font-family: "Work Sans";
     font-style: normal;
@@ -343,41 +357,39 @@ a.btn-white:hover {
     padding: 3px 10px;
     font-size: 12px;
     font-weight: 600;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .m-hadir {
-  background: #E4D3CD;
-  border: 4px solid #E4D3CD;
-  border-radius: 12px;
-  color: #fff;
-  padding: 5px;
-  font-size: 12px;
-  font-weight: 600;
-  margin-left: 10px;
+    background: #E4D3CD;
+    border-radius: 200px;
+    color: #fff;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 5px;
 }
 
 .t-hadir {
-  background: #C9C9C9;
-  border: 4px solid #C9C9C9;
-  border-radius: 12px;
-  color: #fff;
-  padding: 5px;
-  font-size: 12px;
-  font-weight: 600;
-  margin-left: 10px;
+    background: #C9C9C9;
+    border-radius: 200px;
+    color: #fff;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 5px;
 }
 
 #pay.float {
     position: absolute;
     z-index: 99;
-    right: 10px;
-    top: 60px;
+    right: 20px;
+    top: 85px;
 }
 
 #pay-button {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     text-align: center;
     display: flex;
@@ -388,78 +400,100 @@ a.btn-white:hover {
 }
 
 .w3-modal {
-  z-index: 999 !important;
+    z-index: 999 !important;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .w3-modal-content {
-  padding: 15px !important;
-  border-radius: 10px;
-  width: 400px!important;
+    padding: 15px !important;
+    border-radius: 10px;
+    width: 400px!important;
 }
 
 .font-digital {
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #575757;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: #575757;
 }
 
 span.w3-button.w3-display-topright {
-  color: #000;
+    color: #575757;
+}
+
+span.w3-button:hover {
+    color: #575757!important;
+    background-color: transparent !important;
 }
 
 .choosen-bank {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem 0;
 }
 
 .bank-detail {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  color: #000;
-  width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #575757;
+    letter-spacing: normal;
+    width: 150px;
 }
 
 .bank-name {
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #575757;
+}
 
-  color: #575757;
+.bank-title {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.bank-title:hover {
+    color: #007BFF;
+}
+
+.background-top {
+    width: 100%;
+    margin-top: -130px;
 }
 
 .modal-h {
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.15em;
-  color: #575757;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.15em;
+    color: #575757;
 }
 
 .music-control {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     z-index: 99;
-    right: 10px;
-    top: 10px;
+    right: 20px;
+    top: 20px;
     text-align: center;
     border-radius: 50%;
-    padding-top: 7px;
+    padding-top: 10px;
     background-color: #fff;
 }
 
 .sound-on {
-  display: none;
+    display: none;
 }
 
 .doa-value {
@@ -472,9 +506,17 @@ span.w3-button.w3-display-topright {
 }
 
 .block-data-doa {
-    max-height: 400px;
+    max-height: 600px;
     overflow-y: scroll;
     letter-spacing: normal;
+}
+
+.data-doa {
+    margin: 2rem 0rem;
+}
+
+.location-and-present {
+    margin: -10px 0px;
 }
 
 .last-img {
@@ -494,6 +536,7 @@ span.w3-button.w3-display-topright {
     font-size: 14px;
     font-weight: 700;
     filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.13));
+    cursor: pointer;
 }
 
 .btn-send:hover {
@@ -501,6 +544,7 @@ span.w3-button.w3-display-topright {
     border: 4px solid #575757;
     color: #fff;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .input-t {
@@ -508,6 +552,7 @@ span.w3-button.w3-display-topright {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 12px 20px;
+    font-weight: 500;
 }
 
 :focus-visible {
@@ -571,6 +616,7 @@ span.w3-button.w3-display-topright {
     line-height: 21px;
     width: 370px;
     color: #fff;
+    letter-spacing: normal;
 }
 
 .space-daun {
@@ -653,6 +699,10 @@ span.w3-button.w3-display-topright {
     text-decoration: none;
 }
 
+.btn-ig:hover {
+    color: #E4D3CD;
+}
+
 
 /* Countdown CSS */
 
@@ -710,9 +760,11 @@ li span {
     border-radius: 10px;
 }
 
+
 /* radio button css */
 
 input[type='radio']:after {
+    cursor: pointer;
     width: 15px;
     height: 15px;
     border-radius: 15px;
@@ -729,6 +781,7 @@ input[type='radio']:after {
 }
 
 input[type='radio']:checked:after {
+    cursor: pointer;
     width: 15px;
     height: 15px;
     border-radius: 15px;
@@ -745,30 +798,46 @@ input[type='radio']:checked:after {
     ;
 }
 
+
 /* RESPONSIVE */
 
 
 /* Extra large devices (laptops and desktops, 1200px and down) */
+
 @media only screen and (max-width: 1200px) {
-  .content-data {
-    margin-top: -230px;
-  }
+    .content-data {
+        margin-top: -230px;
+    }
+    .background-top {
+        width: 100%;
+        margin-top: -130px;
+    }
 }
+
 
 /* Large devices (tabs, 992px and down) */
+
 @media only screen and (max-width: 992px) {
-  .separator {
-      display: none;
+    .separator {
+        display: none;
     }
     .mobile-separator {
-      width: 100%;
+        width: 100%;
+    }
+    .content-data {
+        margin-top: -400px
+    }
+    .background-top {
+        width: 100%;
+        margin-top: -180px;
     }
 }
 
-/* Medium devices (landscape tablets, 768px and down) */
-@media only screen and (max-width: 768px) {
 
-  h1 {
+/* Medium devices (landscape tablets, 768px and down) */
+
+@media only screen and (max-width: 768px) {
+    h1 {
         font-size: calc(1.5rem * var(--smaller));
     }
     li {
@@ -777,12 +846,13 @@ input[type='radio']:checked:after {
     li span {
         font-size: calc(3.375rem * var(--smaller));
     }
-    
 }
 
+
 /* Small devices (portrait tablets and large phones, 600px and down) */
+
 @media only screen and (max-width: 600px) {
-  .end-content {
-    margin-top: -220px;
-  }
+    .end-content {
+        margin-top: -220px;
+    }
 }
