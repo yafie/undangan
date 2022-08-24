@@ -1,4 +1,14 @@
 $(document).ready(function () {
+
+  const queryString = window.location;
+  const url = new URL(queryString);
+  const untuk = url.searchParams.get("untuk");
+  
+   if (untuk) {
+     $(".mobile-title").html(untuk);
+     $("#nama").val(untuk);
+  }
+
   $(".instagram-effects").slick({
     dots: true,
     slidesToShow: 2,
@@ -45,4 +55,22 @@ $(".music-control").click(function () {
 
 $("#pay").click(function () {
   $("#id01").show();
+});
+
+$("#okay").click(function () {
+  $("#id02").hide();
+});
+
+$(".buka-udangan").click(function () {
+  $(".main-title").hide();
+  $(".main-img").hide();
+  $(".mobile-separator").show();
+  $("#pay").show();
+  $(".desktop-bar").show();
+  $(".separator").css("position", "absolute");
+  $("#id02").show();
+  playAudio();
+  $(".music-control").show().removeClass('off');
+  $('.sound-off').hide();
+  $('.sound-on').show();
 });

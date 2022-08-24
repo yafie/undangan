@@ -72,18 +72,18 @@ body {
 .separator {
     position: relative;
     width: 100%;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-image: url("../img/main-img.jpg");
 }
 
 .main-img {
     position: absolute;
-    z-index: 99;
+    z-index: 1;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("../img/main-img.jpg");
 }
 
 .desktop-bar {
@@ -93,6 +93,7 @@ body {
     left: auto;
     right: 20px;
     bottom: 40%;
+    z-index: 2;
 }
 
 .wrapper-bar {
@@ -233,11 +234,18 @@ body {
     justify-content: space-evenly;
     align-items: center;
     padding: 20px 200px 0px 200px;
+    z-index: 2;
 }
 
 .bottom-title {
     text-align: center;
     bottom: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 20px 0px;
+    justify-content: center;
+    align-items: center;
 }
 
 .pangkat {
@@ -407,7 +415,7 @@ a.btn-white:hover {
 .w3-modal-content {
     padding: 15px !important;
     border-radius: 10px;
-    width: 400px!important;
+    max-width: 400px;
 }
 
 .font-digital {
@@ -477,6 +485,14 @@ span.w3-button:hover {
     line-height: 16px;
     letter-spacing: 0.15em;
     color: #575757;
+}
+
+.text-modal-center {
+    text-align: center;
+}
+
+.img-save {
+    margin: 2rem 0;
 }
 
 .music-control {
@@ -798,6 +814,10 @@ input[type='radio']:checked:after {
     ;
 }
 
+.buka-udangan {
+    display: none;
+}
+
 
 /* RESPONSIVE */
 
@@ -818,18 +838,62 @@ input[type='radio']:checked:after {
 /* Large devices (tabs, 992px and down) */
 
 @media only screen and (max-width: 992px) {
-    .separator {
-        display: none;
-    }
-    .mobile-separator {
-        width: 100%;
-    }
     .content-data {
         margin-top: -400px
     }
     .background-top {
         width: 100%;
         margin-top: -180px;
+    }
+    .mobile-separator {
+        display: block;
+        width: 100%;
+        position: absolute;
+    }
+    .music-control {
+        display: none;
+        top: 40vh;
+        right: 30px;
+    }
+    #pay.float {
+        display: none;
+        top: 45vh;
+        right: 30px;
+    }
+    .desktop-bar {
+        display: none;
+        position: fixed;
+        width: 100vw;
+        padding: 0 20px 20px;
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        text-align: center;
+    }
+    .wrapper-bar {
+        width: auto;
+        padding: 0;
+    }
+    .wrapper-bar ul li {
+        display: inline-block;
+    }
+    .buka-udangan {
+        display: block;
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.15em;
+        padding: 15px 30px;
+        border-radius: 22.5px;
+        color: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        background: transparent;
+        margin-bottom: 25px;
+    }
+    .main-img {
+        z-index: 2;
     }
 }
 
