@@ -4,7 +4,7 @@
     src: url("../font/tropical_summer_signature-webfont.woff2") format("woff2");
 }
 
-body {
+html, body {
     font-family: sans-serif;
     background-color: #ffffff !important;
     font-family: "Work Sans";
@@ -679,7 +679,7 @@ li {
 li span {
     display: block;
     font-size: 3.5rem;
-    padding: 10px 0;
+    padding: 40px 0;
 }
 
 .emoji {
