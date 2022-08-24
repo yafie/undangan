@@ -407,6 +407,12 @@ a.btn-white:hover {
     font-size: 12px;
 }
 
+#weeding-done {
+    margin: 6rem 0 -8rem 0;
+    z-index: 1;
+    display: none;
+}
+
 .w3-modal {
     z-index: 999 !important;
     background-color: rgba(0, 0, 0, 0.7);
