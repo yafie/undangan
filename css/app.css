@@ -312,7 +312,7 @@ canvas {
 }
 
 .nama-lengkap {
-    font-size: 13px;
+    font-size: 13px !important;
 }
 
 .title-content {
@@ -842,6 +842,7 @@ li span {
 
 .box-number {
     box-sizing: border-box;
+    margin: auto;
     width: 100px;
     height: 100px;
     background: linear-gradient(159.44deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 35.72%, rgba(255, 255, 255, 0.0) 91.89%);
@@ -976,6 +977,7 @@ input[type='radio']:checked:after {
     }
     .box-number {
         box-sizing: border-box;
+        margin: auto;
         width: 50px;
         height: 50px;
         background: linear-gradient(159.44deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 35.72%, rgba(255, 255, 255, 0.0) 91.89%);
@@ -1043,6 +1045,7 @@ input[type='radio']:checked:after {
         margin: 3rem 0 2rem 0;
         font-weight: 600;
         line-height: 25px;
+        font-size: 14px !important;
     }
 }
 
@@ -1133,6 +1136,7 @@ input[type='radio']:checked:after {
     }
     .box-number {
         box-sizing: border-box;
+        margin: auto;
         width: 100px;
         height: 100px;
         background: linear-gradient(159.44deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 35.72%, rgba(255, 255, 255, 0.0) 91.89%);
@@ -1282,6 +1286,7 @@ input[type='radio']:checked:after {
     }
     .box-number {
         box-sizing: border-box;
+        margin: auto;
         width: 50px;
         height: 50px;
         background: linear-gradient(159.44deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 35.72%, rgba(255, 255, 255, 0.0) 91.89%);
@@ -1289,7 +1294,7 @@ input[type='radio']:checked:after {
         border-radius: 10px;
     }
     .pembatas-number {
-        font-size: 10px;
+        font-size: 30px;
         padding: 30px 0;
     }
     #countdown {
@@ -1315,12 +1320,23 @@ input[type='radio']:checked:after {
         text-align: left;
         margin-bottom: -40px;
     }
+    .w3-modal-content {
+        padding: 15px !important;
+        border-radius: 10px;
+        width: 400px !important;
+        margin: auto;
+        margin-top: 100px;
+    }
 }
 
 
 /* Small devices (iphone mini, 430px and down) */
 
 @media only screen and (max-width: 430px) {
+    .pembatas-number {
+        font-size: 30px !important;
+        padding: 22px 0 !important;
+    }
     .the-wedding-title {
         font-size: 80px;
         font-weight: 600;
@@ -1358,5 +1374,28 @@ input[type='radio']:checked:after {
         width: 260px;
         color: #fff;
         letter-spacing: normal;
+    }
+    .dilanjut-dengan {
+        margin: 1rem 0 !important;
+        font-size: 14px !important;
+    }
+    .img-bawah {
+        margin-top: -62px;
+        z-index: -1;
+        width: 100%;
+    }
+    li {
+        display: inline-block;
+        font-size: 14px;
+        list-style-type: none;
+        padding: 0.5em !important;
+        text-transform: uppercase;
+    }
+    .w3-modal-content {
+        padding: 11px !important;
+        border-radius: 10px;
+        width: 350px !important;
+        margin: auto;
+        margin-top: 100px;
     }
 }
