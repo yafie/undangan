@@ -93,53 +93,62 @@ body {
     z-index: 2;
 }
 
-canvas{ display: block; vertical-align: bottom; } 
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
 
-/* ---- particles.js container ---- */ 
 
-#particles-js { 
-    position:absolute; 
-    width: 100%; 
-    height: 100%; 
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-color: #232741;
     background-size: cover;
     background-position: 50% 50%;
-    background-image: url("../img/main-img.jpg"); 
-} 
-
-/* ---- stats.js ---- */ 
-
-.count-particles{ 
-    background: #000022;
-    position: absolute;
-    top: 48px; 
-    left: 0; 
-    width: 80px; 
-    color: #13E8E9; 
-    font-size: .8em; 
-    text-align: left; 
-    text-indent: 4px; 
-    line-height: 14px; 
-    padding-bottom: 2px; 
-    font-family: Helvetica, Arial, sans-serif; 
-    font-weight: bold; 
-} 
-
-.js-count-particles{ font-size: 1.1em; } 
-
-#stats, .count-particles { 
-    -webkit-user-select: none; margin-top: 5px;
-    margin-left: 5px; 
+    background-image: url("../img/main-img.jpg");
 }
 
-#stats { 
+
+/* ---- stats.js ---- */
+
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
     border-radius: 3px 3px 0 0;
     overflow: hidden;
- } 
- 
- .count-particles { 
+}
+
+.count-particles {
     border-radius: 0 0 3px 3px;
- }
+}
 
 .wrapper-bar {
     background: #fff;
@@ -369,13 +378,14 @@ canvas{ display: block; vertical-align: bottom; }
 }
 
 .nama-lengkap {
-    font-size: 13px;
+    font-size: 13px !important;
 }
 
 .title-content {
     margin: 2rem 0 4rem 0;
     font-weight: 600;
     line-height: 16px;
+    z-index: 1;
 }
 
 a.save-date {
@@ -524,7 +534,7 @@ a.btn-white:hover {
 }
 
 #weeding-done {
-    margin: 6rem 0 -8rem 0;
+    margin: 4rem 0 -4rem 0;
     z-index: 1;
     display: none;
 }
@@ -898,6 +908,7 @@ li span {
 
 .box-number {
     box-sizing: border-box;
+    margin: auto;
     width: 100px;
     height: 100px;
     background: linear-gradient(159.44deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 35.72%, rgba(255, 255, 255, 0.0) 91.89%);
@@ -970,6 +981,13 @@ input[type='radio']:checked:after {
     margin-top: -50px;
 }
 
+.w3-display-topright {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 25px;
+}
+
 
 /* RESPONSIVE */
 
@@ -992,6 +1010,7 @@ input[type='radio']:checked:after {
         margin: 3rem 0 0 0;
         font-weight: 600;
         line-height: 60px;
+        z-index: 1;
     }
     a.save-date {
         width: 311px;
@@ -1024,6 +1043,7 @@ input[type='radio']:checked:after {
     }
     .box-number {
         box-sizing: border-box;
+        margin: auto;
         width: 50px;
         height: 50px;
         background: linear-gradient(159.44deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 35.72%, rgba(255, 255, 255, 0.0) 91.89%);
@@ -1091,6 +1111,7 @@ input[type='radio']:checked:after {
         margin: 3rem 0 2rem 0;
         font-weight: 600;
         line-height: 25px;
+        font-size: 14px !important;
     }
 }
 
@@ -1099,7 +1120,7 @@ input[type='radio']:checked:after {
 
 @media only screen and (max-width: 992px) {
     .mobile-separator {
-        visibility : hidden;
+        visibility: hidden;
         display: block;
         width: 100%;
         position: absolute;
@@ -1177,9 +1198,11 @@ input[type='radio']:checked:after {
         margin: 2rem 0 0 0;
         font-weight: 600;
         line-height: 60px;
+        z-index: 1;
     }
     .box-number {
         box-sizing: border-box;
+        margin: auto;
         width: 100px;
         height: 100px;
         background: linear-gradient(159.44deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 35.72%, rgba(255, 255, 255, 0.0) 91.89%);
@@ -1233,6 +1256,7 @@ input[type='radio']:checked:after {
         margin: 2rem 0 2rem 0;
         font-weight: 600;
         line-height: 30px;
+        z-index: 1;
     }
 }
 
@@ -1240,6 +1264,27 @@ input[type='radio']:checked:after {
 /* Medium devices (landscape tablets, 768px and down) */
 
 @media only screen and (max-width: 768px) {
+    .background-top {
+        width: 100%;
+        margin-top: -140px;
+    }
+    .content-data {
+        margin-top: -320px;
+    }
+    .end-content {
+        margin-top: -340px;
+    }
+    .img-bawah {
+        margin-top: -115px;
+        z-index: -1;
+        width: 100%;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
     .desktop-bar {
         display: none;
         position: fixed;
@@ -1257,12 +1302,6 @@ input[type='radio']:checked:after {
     .wrapper-bar ul li {
         display: inline-block;
     }
-}
-
-
-/* Small devices (portrait tablets and large phones, 600px and down) */
-
-@media only screen and (max-width: 600px) {
     h1 {
         font-size: calc(1.5rem * var(--smaller));
     }
@@ -1274,5 +1313,155 @@ input[type='radio']:checked:after {
     }
     .end-content {
         margin-top: -220px;
+    }
+    .the-wedding-title {
+        font-size: 96px;
+        font-weight: 600;
+        margin-bottom: 6rem;
+    }
+    .background-top {
+        width: 100%;
+        margin-top: -110px;
+    }
+    .content-data {
+        margin-top: -225px;
+    }
+    .music-control {
+        display: none;
+        top: 17vh;
+        right: 30px;
+    }
+    #pay.float {
+        display: none;
+        top: 25vh;
+        right: 30px;
+    }
+    h1 {
+        font-size: calc(1.5rem * var(--smaller));
+    }
+    li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+    li span {
+        font-size: 2rem;
+        display: block;
+        padding: 17px 0;
+    }
+    .font-countdown {
+        font-size: 10px;
+    }
+    .box-number {
+        box-sizing: border-box;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(159.44deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 35.72%, rgba(255, 255, 255, 0.0) 91.89%);
+        box-shadow: 0px 4px 24px -1px rgb(0 0 0 / 10%);
+        border-radius: 10px;
+    }
+    .pembatas-number {
+        font-size: 30px;
+        padding: 30px 0;
+    }
+    #countdown {
+        z-index: 1;
+        padding-top: 20px;
+    }
+    .font-dasar {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 21px;
+        width: 320px;
+        color: #fff;
+        letter-spacing: normal;
+    }
+    .img-bawah {
+        margin-top: -80px;
+        z-index: -1;
+        width: 100%;
+    }
+    .form-data {
+        padding: 0 2rem;
+        width: 100%;
+        text-align: left;
+        margin-bottom: -40px;
+    }
+    .w3-modal-content {
+        padding: 15px !important;
+        border-radius: 10px;
+        width: 400px !important;
+        margin: auto;
+        margin-top: 100px;
+    }
+}
+
+
+/* Small devices (iphone mini, 430px and down) */
+
+@media only screen and (max-width: 430px) {
+    .pembatas-number {
+        font-size: 30px !important;
+        padding: 22px 0 !important;
+    }
+    .the-wedding-title {
+        font-size: 80px;
+        font-weight: 600;
+        margin-bottom: 6rem;
+    }
+    .top-title {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 0px 0px 0px;
+        z-index: 2;
+        font-size: 12px;
+    }
+    .title-content {
+        margin: 2rem 0 2rem 0;
+        font-weight: 600;
+        font-size: 55px;
+        line-height: 30px;
+        z-index: 1;
+    }
+    .background-top {
+        width: 100%;
+        margin-top: -77px;
+    }
+    .content-data {
+        margin-top: -195px;
+    }
+    .end-content {
+        margin-top: -210px;
+    }
+    .font-dasar {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 21px;
+        width: 260px;
+        color: #fff;
+        letter-spacing: normal;
+    }
+    .dilanjut-dengan {
+        margin: 1rem 0 !important;
+        font-size: 14px !important;
+    }
+    .img-bawah {
+        margin-top: -62px;
+        z-index: -1;
+        width: 100%;
+    }
+    li {
+        display: inline-block;
+        font-size: 14px;
+        list-style-type: none;
+        padding: 0.5em !important;
+        text-transform: uppercase;
+    }
+    .w3-modal-content {
+        padding: 11px !important;
+        border-radius: 10px;
+        width: 350px !important;
+        margin: auto;
+        margin-top: 100px;
     }
 }
