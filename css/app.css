@@ -188,61 +188,71 @@ canvas {
 
 .icon-date.active {
     background-color: #D7AF9F;
+    width: 40px;
+    height: 40px;
 }
 
-.icon-date.active > .img-off {
+.icon-date.active>.img-off {
     display: none;
 }
 
-.icon-date.active > .img-active {
+.icon-date.active>.img-active {
     display: block;
 }
 
 .icon-love.active {
     background-color: #D7AF9F;
+    width: 40px;
+    height: 40px;
 }
 
-.icon-love.active > .img-off {
+.icon-love.active>.img-off {
     display: none;
 }
 
-.icon-love.active > .img-active {
+.icon-love.active>.img-active {
     display: block;
 }
 
 .icon-location.active {
     background-color: #D7AF9F;
+    width: 40px;
+    height: 40px;
 }
 
-.icon-location.active > .img-off {
+.icon-location.active>.img-off {
     display: none;
 }
 
-.icon-location.active > .img-active {
+.icon-location.active>.img-active {
     display: block;
 }
 
 .icon-insta.active {
     background-color: #D7AF9F;
+    width: 40px;
+    height: 40px;
 }
 
-.icon-insta.active > .img-off {
+.icon-insta.active>.img-off {
     display: none;
 }
 
-.icon-insta.active > .img-active {
+.icon-insta.active>.img-active {
     display: block;
 }
 
 .icon-doa.active {
     background-color: #D7AF9F;
+    width: 40px;
+    height: 40px;
 }
 
-.icon-doa.active > .img-off {
+.icon-doa.active>.img-off {
     display: none;
 }
 
-.icon-doa.active > .img-active {
+.icon-doa.active>.img-active {
     display: block;
 }
 
