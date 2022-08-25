@@ -853,6 +853,12 @@ input[type='radio']:checked:after {
     width: 352px;
 }
 
+.top-location {
+    width: 100%;
+    z-index: 1;
+    margin-top: -50px;
+}
+
 
 /* RESPONSIVE */
 
@@ -999,19 +1005,15 @@ input[type='radio']:checked:after {
     .desktop-bar {
         display: none;
         position: fixed;
-        width: 100vw;
-        padding: 0 20px 20px;
-        bottom: 0;
-        left: 0;
         z-index: 99;
         text-align: center;
-    }
-    .wrapper-bar {
         width: auto;
         padding: 0;
-    }
-    .wrapper-bar ul li {
-        display: inline-block;
+        left: auto;
+        right: 20px;
+        bottom: 35%;
+        z-index: 2;
+        padding: 10px;
     }
     .buka-udangan {
         display: block;
@@ -1037,9 +1039,6 @@ input[type='radio']:checked:after {
     .main-img {
         z-index: 2;
     }
-    .content-data {
-        margin-top: -400px
-    }
     .background-top {
         width: 100%;
         margin-top: -180px;
@@ -1059,12 +1058,94 @@ input[type='radio']:checked:after {
         color: #575757;
         margin: 1rem 0;
     }
+    .content-data {
+        margin-top: -410px
+    }
+    .title-content {
+        margin: 2rem 0 0 0;
+        font-weight: 600;
+        line-height: 60px;
+    }
+    .box-number {
+        box-sizing: border-box;
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(159.44deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 35.72%, rgba(255, 255, 255, 0.0) 91.89%);
+        box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    h1 {
+        font-size: unset;
+    }
+    li {
+        font-size: unset;
+    }
+    li span {
+        font-size: 4rem;
+        display: block;
+        padding: 40px 0;
+    }
+    .font-countdown {
+        font-size: 14px;
+    }
+    .pembatas-number {
+        font-size: 40px;
+        padding: 55px 0;
+    }
+    #countdown {
+        z-index: 1;
+        padding-top: 20px;
+    }
+    .end-content {
+        margin-top: -440px;
+    }
+    .font-dasar {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 21px;
+        width: 400px;
+        color: #fff;
+        letter-spacing: normal;
+    }
+    .top-location {
+        width: 100%;
+        z-index: 1;
+        margin-top: 10px;
+    }
+    .img-bawah {
+        margin-top: -150px;
+        z-index: -1;
+        width: 100%;
+    }
+    .title-content {
+        margin: 2rem 0 2rem 0;
+        font-weight: 600;
+        line-height: 30px;
+    }
 }
 
 
 /* Medium devices (landscape tablets, 768px and down) */
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .desktop-bar {
+        display: none;
+        position: fixed;
+        width: 100vw;
+        padding: 0 20px 20px;
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        text-align: center;
+    }
+    .wrapper-bar {
+        width: auto;
+        padding: 0;
+    }
+    .wrapper-bar ul li {
+        display: inline-block;
+    }
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and down) */
