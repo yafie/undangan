@@ -63,11 +63,11 @@ $("#okay").click(function () {
 
 $(".buka-udangan").click(function () {
   $(".main-title").hide();
-  $(".main-img").hide();
-  $(".mobile-separator").show();
-  $("#pay").show();
+  $(".main-img").hide(); 
+  $("#pay").show(); 
   $(".desktop-bar").show();
   $(".separator").css("position", "absolute");
+  $(".mobile-separator").css("visibility", "visible");
   $("#id02").show();
   playAudio();
   $(".music-control").show().removeClass('off');
