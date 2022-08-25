@@ -165,10 +165,76 @@ canvas{ display: block; vertical-align: bottom; }
     text-decoration: none;
     color: #6d6d6d;
     font-size: 10px;
+    border-radius: 100%;
 }
 
 .bar-icon {
     padding: 7px;
+    border-radius: 100%;
+}
+
+.img-active {
+    display: none;
+}
+
+.icon-date.active {
+    background-color: #D7AF9F;
+}
+
+.icon-date.active > .img-off {
+    display: none;
+}
+
+.icon-date.active > .img-active {
+    display: block;
+}
+
+.icon-love.active {
+    background-color: #D7AF9F;
+}
+
+.icon-love.active > .img-off {
+    display: none;
+}
+
+.icon-love.active > .img-active {
+    display: block;
+}
+
+.icon-location.active {
+    background-color: #D7AF9F;
+}
+
+.icon-location.active > .img-off {
+    display: none;
+}
+
+.icon-location.active > .img-active {
+    display: block;
+}
+
+.icon-insta.active {
+    background-color: #D7AF9F;
+}
+
+.icon-insta.active > .img-off {
+    display: none;
+}
+
+.icon-insta.active > .img-active {
+    display: block;
+}
+
+.icon-doa.active {
+    background-color: #D7AF9F;
+}
+
+.icon-doa.active > .img-off {
+    display: none;
+}
+
+.icon-doa.active > .img-active {
+    display: block;
 }
 
 .add-shadow {

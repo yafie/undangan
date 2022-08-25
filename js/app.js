@@ -74,21 +74,8 @@ $(".buka-udangan").click(function () {
   $('.sound-off').hide();
   $('.sound-on').show();
 });
-
-gsap.timeline()
-.to(".pictureDesktop", {opacity: 1, duration: 0.2})
-  .to(".home", {opacity: 1, duration: 0.2})
-
-gsap.from("h1.homeTitle", { delay: 0.6, y: 100, duration: 0.5, opacity: 0, ease: "back" })
-      gsap.from(".defaultFont", {
-        delay: 0.8,
-        y: 50,
-        duration: 1,
-        opacity: 0,
-        ease: "back",
-      })
  
-gsap.from(".btnHome", { delay: 0.9, y: 50, duration: 0.6, opacity: 0, ease: "back" });
+gsap.from(".aniTitle", { delay:0.5, scale: 0, duration: 1.25, opacity: 0, ease: "circ.inOut" });
 
 function animateFrom(elem, direction) {
   direction = direction || 1;
@@ -104,7 +91,7 @@ function animateFrom(elem, direction) {
   elem.style.transform = "translate(" + x + "px, " + y + "px)";
   elem.style.opacity = "0";
   gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
-    duration: 1.25, 
+    duration: 2.75, 
     x: 0,
     y: 0, 
     autoAlpha: 1, 
@@ -115,6 +102,10 @@ function animateFrom(elem, direction) {
 
 function hide(elem) {
   gsap.set(elem, {autoAlpha: 0});
+}
+
+async function changeBackground(elemId, activeClass) {
+  $(elemId).removeClass("active").addClass(activeClass);
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -131,5 +122,50 @@ document.addEventListener("DOMContentLoaded", function() {
       onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
     });
   });
+
+  ScrollTrigger.create({
+      trigger: "#date-id",
+      scroller: "#mobile-scroll",
+      onEnter: function () { changeBackground(".icon-date", "active") },
+      onEnterBack: function() { changeBackground(".icon-date", "active") },
+      onLeave: function () { changeBackground(".icon-date", "") },
+      onLeaveBack: function () { changeBackground(".icon-date", "") }
+    });
+  
+  ScrollTrigger.create({
+      trigger: "#love-id",
+      scroller: "#mobile-scroll",
+      onEnter: function () { changeBackground(".icon-love", "active") },
+      onEnterBack: function() { changeBackground(".icon-love", "active") },
+      onLeave: function () { changeBackground(".icon-love", "") },
+      onLeaveBack: function () { changeBackground(".icon-love", "") }
+  });
+  
+  ScrollTrigger.create({
+      trigger: "#maps-id",
+      scroller: "#mobile-scroll",
+      onEnter: function () { changeBackground(".icon-location", "active") },
+      onEnterBack: function() { changeBackground(".icon-location", "active") },
+      onLeave: function () { changeBackground(".icon-location", "") },
+      onLeaveBack: function () { changeBackground(".icon-location", "") }
+  });
+  
+  ScrollTrigger.create({
+      trigger: "#instagram-id",
+      scroller: "#mobile-scroll",
+      onEnter: function () { changeBackground(".icon-insta", "active") },
+      onEnterBack: function() { changeBackground(".icon-insta", "active") },
+      onLeave: function () { changeBackground(".icon-insta", "") },
+      onLeaveBack: function () { changeBackground(".icon-insta", "") }
+  });
+  
+  ScrollTrigger.create({
+      trigger: "#doa-id",
+      scroller: "#mobile-scroll",
+      onEnter: function () { changeBackground(".icon-doa", "active") },
+      onEnterBack: function() { changeBackground(".icon-doa", "active") },
+      onLeave: function () { changeBackground(".icon-doa", "") },
+      onLeaveBack: function () { changeBackground(".icon-doa", "") }
+    });
 });
 
