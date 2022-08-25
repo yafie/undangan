@@ -640,6 +640,7 @@ span.w3-button:hover {
 .akad-nikah {
     font-size: 64px;
     font-weight: 600;
+    margin: 3rem 0;
 }
 
 .font-dasar {
@@ -835,6 +836,23 @@ input[type='radio']:checked:after {
     display: none;
 }
 
+#countdown {
+    z-index: 1;
+    padding-top: 50px;
+}
+
+.background-bot {
+    width: 100%;
+}
+
+.pembates-margin {
+    margin-top: -120px;
+}
+
+.find-ig {
+    width: 352px;
+}
+
 
 /* RESPONSIVE */
 
@@ -842,12 +860,120 @@ input[type='radio']:checked:after {
 /* Extra large devices (laptops and desktops, 1200px and down) */
 
 @media only screen and (max-width: 1200px) {
-    .content-data {
-        margin-top: -230px;
-    }
     .background-top {
         width: 100%;
-        margin-top: -130px;
+        margin-top: -80px;
+    }
+    .top-title {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 0px 0px 0px;
+        z-index: 2;
+    }
+    .title-content {
+        margin: 3rem 0 0 0;
+        font-weight: 600;
+        line-height: 60px;
+    }
+    a.save-date {
+        width: 311px;
+        margin: 2rem 0 2rem 0;
+        padding: 21px 0;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.15em;
+        color: #575757;
+        font-weight: 700;
+        border-radius: 10px;
+        border: none;
+        filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.13));
+        text-decoration: none;
+        background: #fff;
+    }
+    h1 {
+        font-size: calc(1.5rem * var(--smaller));
+    }
+    li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+    li span {
+        font-size: 2rem;
+        display: block;
+        padding: 17px 0;
+    }
+    .font-countdown {
+        font-size: 10px;
+    }
+    .box-number {
+        box-sizing: border-box;
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(159.44deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 35.72%, rgba(255, 255, 255, 0.0) 91.89%);
+        box-shadow: 0px 4px 24px -1px rgb(0 0 0 / 10%);
+        border-radius: 10px;
+    }
+    .pembatas-number {
+        font-size: 10px;
+        padding: 30px 0;
+    }
+    #countdown {
+        z-index: 1;
+        padding-top: 20px;
+    }
+    .end-content {
+        margin-top: -200px;
+        display: flex;
+    }
+    .background-bot {
+        width: 100%;
+        margin-top: 40px;
+        ;
+    }
+    .content-data {
+        margin-top: -195px;
+    }
+    .font-dasar {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 21px;
+        width: 300px;
+        color: #fff;
+        letter-spacing: normal;
+    }
+    .akad-nikah {
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 80px;
+        margin: 1rem 0;
+    }
+    .dilanjut-dengan {
+        margin: 1rem 0 !important;
+    }
+    .time-title {
+        margin: 0.8rem 0;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    .wedding-time {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+    }
+    .img-bawah {
+        margin-top: -65px;
+        z-index: -1;
+        width: 100%;
+    }
+    .pembates-margin {
+        margin-top: -65px;
+    }
+    .find-ig {
+        width: 352px;
+        margin: 3rem 0 2rem 0;
+        font-weight: 600;
+        line-height: 25px;
     }
 }
 
@@ -855,13 +981,6 @@ input[type='radio']:checked:after {
 /* Large devices (tabs, 992px and down) */
 
 @media only screen and (max-width: 992px) {
-    .content-data {
-        margin-top: -400px
-    }
-    .background-top {
-        width: 100%;
-        margin-top: -180px;
-    }
     .mobile-separator {
         display: block;
         width: 100%;
@@ -869,12 +988,12 @@ input[type='radio']:checked:after {
     }
     .music-control {
         display: none;
-        top: 40vh;
+        top: 2vh;
         right: 30px;
     }
     #pay.float {
         display: none;
-        top: 45vh;
+        top: 9vh;
         right: 30px;
     }
     .desktop-bar {
@@ -907,7 +1026,7 @@ input[type='radio']:checked:after {
         color: #FFFFFF;
         border: 2px solid #FFFFFF;
         background: transparent;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
         cursor: pointer;
     }
     .buka-udangan:hover {
@@ -918,12 +1037,39 @@ input[type='radio']:checked:after {
     .main-img {
         z-index: 2;
     }
+    .content-data {
+        margin-top: -400px
+    }
+    .background-top {
+        width: 100%;
+        margin-top: -180px;
+    }
+    .the-wedding-title {
+        font-size: 120px;
+        font-weight: 600;
+        margin-bottom: 6rem;
+    }
+    .modal-h {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 16px;
+        letter-spacing: 0.15em;
+        color: #575757;
+        margin: 1rem 0;
+    }
 }
 
 
 /* Medium devices (landscape tablets, 768px and down) */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {}
+
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
     h1 {
         font-size: calc(1.5rem * var(--smaller));
     }
@@ -933,12 +1079,6 @@ input[type='radio']:checked:after {
     li span {
         font-size: calc(3.375rem * var(--smaller));
     }
-}
-
-
-/* Small devices (portrait tablets and large phones, 600px and down) */
-
-@media only screen and (max-width: 600px) {
     .end-content {
         margin-top: -220px;
     }
