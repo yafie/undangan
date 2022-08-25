@@ -12,7 +12,7 @@ $(document).ready(function () {
   $(".instagram-effects").slick({
     dots: true,
     slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
   });
 
   $.ajax({    //create an ajax request to display.php
