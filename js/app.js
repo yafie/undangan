@@ -46,7 +46,7 @@ $(document).ready(function() {
                 submit: "insert"
             },
             success: function (data) {
-                alert(data.trim());
+                //alert(data.trim());
                 if (data == "success") {
                     $.ajax({
                         //create an ajax request to display.php
