@@ -1487,7 +1487,6 @@ input[type="radio"]:checked:after {
         border-radius: 10px;
         width: 400px !important;
         margin: auto;
-        margin-top: 100px;
     }
 }
 
@@ -1558,6 +1557,5 @@ input[type="radio"]:checked:after {
         border-radius: 10px;
         width: 350px !important;
         margin: auto;
-        margin-top: 100px;
     }
 }
