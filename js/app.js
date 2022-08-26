@@ -69,6 +69,20 @@ $("#okay").click(function() {
     $("#id02").hide();
 });
 
+if (navigator.userAgent.toLowerCase().match(/mobile/i)) {
+    $("#desktopmodalpancingan").hide();
+}
+else {
+    $("#desktopmodalpancingan").show();
+}
+$("#okaypancing").click(function() {
+    playAudio();
+    $(this).removeClass("off");
+    $(".sound-off").hide();
+    $(".sound-on").show();
+    $("#desktopmodalpancingan").hide();
+});
+
 $(".buka-udangan").click(function() {
     $(".main-title").hide();
     $(".main-img").hide();
