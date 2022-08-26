@@ -370,7 +370,7 @@
                             Kirim Doa
                         </span>
                         <div class="form-data font-black">
-                            <form action="php/insert.php" method="post" class="w-100">
+                            <div class="w-100">
                                 <div class="form-wrap mt-2 gs_reveal">
                                     <div class="label">
                                         NAMA
@@ -384,7 +384,7 @@
                                         LOKASI
                                     </div>
                                     <div class="input-form">
-                                        <input type="text" class="w-100 input-t" name="lokasi" placeholder="Asal Daerah" required>
+                                        <input type="text" class="w-100 input-t" id="lokasi" name="lokasi" placeholder="Asal Daerah" required>
                                     </div>
                                 </div>
                                 <div class="form-wrap mt-2 gs_reveal">
@@ -411,11 +411,11 @@
                                         UCAPAN & DOA
                                     </div>
                                     <div class="input-form">
-                                        <textarea type="text" class="w-100 input-t" name="ucapan" rows="8" placeholder="Ucapan Doa & Harapan" required></textarea>
+                                        <textarea type="text" class="w-100 input-t" id="ucapan" name="ucapan" rows="8" placeholder="Ucapan Doa & Harapan" required></textarea>
                                     </div>
                                 </div>
-                                <button type="submit" name="submit" value="Submit" class="btn-send gs_reveal">SEND MESSAGE</button>
-                            </form>
+                                <button type="button" id="submit" name="submit" value="Submit" class="btn-send gs_reveal">SEND MESSAGE</button>
+                            </div>
 
                             <div class="block-data-doa gs_reveal gs_reveal_fromLeft mt-3">
 

@@ -23,6 +23,47 @@ $(document).ready(function() {
             $(".block-data-doa").append(response);
         },
     });
+
+    $("#submit").click(function(){
+        var kehadiran;
+        if ($("#hadir"          ).prop("checked") ) kehadiran = "hadir";
+        if ($("#mungkin-hadir"  ).prop("checked") ) kehadiran = "mungkin-hadir";
+        if ($("#tidak-hadir"    ).prop("checked") ) kehadiran = "tidak-hadir";
+
+        console.log($("#nama").val())
+        console.log($("#lokasi").val())
+        console.log(kehadiran)
+        console.log($("#ucapan").val())
+
+        $.ajax({
+            type: 'POST',
+            url: "./php/insert.php",
+            data: {
+                nama: $("#nama").val(),
+                lokasi: $("#lokasi").val(),
+                kehadiran: kehadiran,
+                ucapan: $("#ucapan").val(),
+                submit: "insert"
+            },
+            success: function (data) {
+                alert(data.trim());
+                if (data == "success") {
+                    $.ajax({
+                        //create an ajax request to display.php
+                        type: "GET",
+                        url: "./php/display.php",
+                        dataType: "html", //expect html to be returned
+                        success: function(response) {
+                            $(".block-data-doa").empty();
+                            $(".block-data-doa").append(response);
+                        },
+                    });
+                }
+                // window.location.reload();
+            }
+        });
+
+    });
 });
 
 var x = document.getElementById("background_music");
