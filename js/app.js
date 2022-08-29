@@ -25,9 +25,10 @@ $(document).ready(function() {
     });
 
 
+    $('#submit').css('cursor','pointer');
 
-    $("#submit").click(function() {
-
+    $(document).on('click', '#submit',  function(event) {
+        event.preventDefault();
         var kehadiran;
         if ($("#hadir").prop("checked")) kehadiran = "hadir";
         if ($("#mungkin-hadir").prop("checked")) kehadiran = "mungkin-hadir";
