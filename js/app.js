@@ -25,9 +25,10 @@ $(document).ready(function() {
     });
 
 
+    $('#submit').css('cursor','pointer');
 
-    $("#submit").click(function() {
-
+    $(document).on('click', '#submit',  function(event) {
+        event.preventDefault();
         var kehadiran;
         if ($("#hadir").prop("checked")) kehadiran = "hadir";
         if ($("#mungkin-hadir").prop("checked")) kehadiran = "mungkin-hadir";
@@ -96,6 +97,31 @@ $(document).ready(function() {
         $("#id02").show();
     }
 
+});
+
+$("#click-date").click(function () {
+    let linkDate = document.getElementById("date-id");
+    linkDate.scrollIntoView();
+});
+
+$("#click-love").click(function () {
+    let linkDate = document.getElementById("love-id");
+    linkDate.scrollIntoView();
+});
+
+$("#click-maps").click(function () {
+    let linkDate = document.getElementById("maps-id");
+    linkDate.scrollIntoView();
+});
+
+$("#click-instagram").click(function () {
+    let linkDate = document.getElementById("instagram-id");
+    linkDate.scrollIntoView();
+});
+
+$("#click-doa").click(function () {
+    let linkDate = document.getElementById("doa-id");
+    linkDate.scrollIntoView();
 });
 
 var x = document.getElementById("background_music");
