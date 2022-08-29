@@ -86,6 +86,16 @@ $(document).ready(function() {
         }
 
     });
+
+    let mql = window.matchMedia('(min-width: 992px)');
+    console.log(mql)
+
+    if (mql.matches == false) {
+        $("#id02").hide();
+    } else {
+        $("#id02").show();
+    }
+
 });
 
 var x = document.getElementById("background_music");
@@ -130,20 +140,12 @@ $("#close-01").click(function() {
 
 $("#okay").click(function() {
     $("#id02").hide();
-});
-
-if (navigator.userAgent.toLowerCase().match(/mobile/i)) {
-    $("#desktopmodalpancingan").hide();
-} else {
-    $("#desktopmodalpancingan").show();
-}
-$("#okaypancing").click(function() {
     playAudio();
-    $(this).removeClass("off");
+    $(".music-control").show().removeClass("off");
     $(".sound-off").hide();
     $(".sound-on").show();
-    $("#desktopmodalpancingan").hide();
 });
+
 
 $(".buka-udangan").click(function() {
     $(".main-title").hide();
@@ -153,10 +155,6 @@ $(".buka-udangan").click(function() {
     $(".separator").css("position", "absolute");
     $(".mobile-separator").css("visibility", "visible");
     $("#id02").show();
-    playAudio();
-    $(".music-control").show().removeClass("off");
-    $(".sound-off").hide();
-    $(".sound-on").show();
 });
 
 gsap.from(".aniTitle", {
