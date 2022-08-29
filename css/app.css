@@ -1057,15 +1057,16 @@ li span {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 999;
 }
 
 .alert {
     padding: 15px;
-    margin-top: 30px;
+    /* margin-top: 5rem; */
     border: 1px solid #eed3d7;
     border-radius: 10px;
     position: absolute;
-    top: 0px;
+    top: 50vh;
     /* Each alert has its own width */
     float: right;
     clear: right;
@@ -1073,7 +1074,7 @@ li span {
     letter-spacing: normal;
     text-transform: uppercase;
     text-align: center;
-    z-index: 99;
+    z-index: 999;
 }
 
 .alert-red {
