@@ -24,27 +24,27 @@ $(document).ready(function() {
         },
     });
 
-    
 
-    $("#submit").click(function () {
+
+    $("#submit").click(function() {
 
         var kehadiran;
-        if ($("#hadir"          ).prop("checked") ) kehadiran = "hadir";
-        if ($("#mungkin-hadir"  ).prop("checked") ) kehadiran = "mungkin-hadir";
+        if ($("#hadir").prop("checked")) kehadiran = "hadir";
+        if ($("#mungkin-hadir").prop("checked")) kehadiran = "mungkin-hadir";
         if ($("#tidak-hadir").prop("checked")) kehadiran = "tidak-hadir";
 
         var nama = $("#nama").val();
         var lokasi = $("#lokasi").val();
         var ucapan = $("#ucapan").val();
-        
+
         if (nama == "") {
-            ohSnap('Nama harus diisi', {color: 'red'}); 
+            ohSnap('Nama harus diisi', { color: 'red' });
         } else if (lokasi == "") {
-            ohSnap('Lokasi harus diisi', {color: 'red'}); 
+            ohSnap('Lokasi harus diisi', { color: 'red' });
         } else if (!kehadiran) {
-            ohSnap('Kehadiran harus diisi', {color: 'red'}); 
+            ohSnap('Kehadiran harus diisi', { color: 'red' });
         } else if (ucapan == "") {
-            ohSnap('Ucapan harus diisi', {color: 'red'}); 
+            ohSnap('Ucapan harus diisi', { color: 'red' });
         } else {
 
             $.ajax({
@@ -57,10 +57,10 @@ $(document).ready(function() {
                     ucapan: $("#ucapan").val(),
                     submit: "insert"
                 },
-                success: function (data) {
+                success: function(data) {
                     //alert(data.trim());
                     if (data == "success") {
-                        ohSnap('Terima Kasih, Pesan anda diterima', {color: 'green'});
+                        ohSnap('Terima Kasih atas doa dan ucapannya', { color: 'green' });
                         $.ajax({
                             //create an ajax request to display.php
                             type: "GET",
@@ -71,7 +71,7 @@ $(document).ready(function() {
                                 $(".block-data-doa").append(response);
                                 let scroll_to_bottom = document.getElementById('block-doa');
                                 scroll_to_bottom.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
-                                
+
                                 $("#nama").val("");
                                 $("#lokasi").val("");
                                 $("#ucapan").val("");
@@ -82,7 +82,7 @@ $(document).ready(function() {
                     // window.location.reload();
                 }
             });
-            
+
         }
 
     });
@@ -134,8 +134,7 @@ $("#okay").click(function() {
 
 if (navigator.userAgent.toLowerCase().match(/mobile/i)) {
     $("#desktopmodalpancingan").hide();
-}
-else {
+} else {
     $("#desktopmodalpancingan").show();
 }
 $("#okaypancing").click(function() {
