@@ -1100,6 +1100,7 @@ input[type="radio"]:checked:after {
     letter-spacing: normal;
     text-transform: uppercase;
     text-align: center;
+    z-index: 99;
 }
 
 .alert-red {
@@ -1484,7 +1485,7 @@ input[type="radio"]:checked:after {
         margin-top: -220px;
     }
     .the-wedding-title {
-        font-size: 96px;
+        font-size: 6rem;
         font-weight: 600;
         margin-bottom: 6rem;
     }
@@ -1572,7 +1573,7 @@ input[type="radio"]:checked:after {
         padding: 22px 0 !important;
     }
     .the-wedding-title {
-        font-size: 80px;
+        font-size: 5rem;
         font-weight: 600;
         margin-bottom: 6rem;
     }
