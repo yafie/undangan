@@ -1043,20 +1043,29 @@ li span {
     cursor: pointer !important;
 }
 
+.specifyColor {
+    accent-color: #cd7d60;
+}
+
 
 /* ALERTS */
 
 
 /* inspired by Twitter Bootstrap */
 
+#ohsnap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .alert {
     padding: 15px;
-    margin-bottom: 20px;
+    margin-top: 30px;
     border: 1px solid #eed3d7;
     border-radius: 10px;
     position: absolute;
-    bottom: 0px;
-    right: 21px;
+    top: 0px;
     /* Each alert has its own width */
     float: right;
     clear: right;
