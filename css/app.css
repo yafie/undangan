@@ -1354,6 +1354,31 @@ input[type="radio"]:checked:after {
     .daun-melayang {
         display: block;
     }
+    a.bar-icon:hover {
+        background: #d7af9f;
+    }
+    a.save-date:hover {
+        background: #fff;
+        color: #575757;
+    }
+    a.btn-white:hover {
+        color: #575757;
+        background: #fff;
+    }
+    #pay-button:hover {
+        background-color: #fff;
+    }
+    .music-control:hover {
+        background-color: #fff;
+    }
+    .btn-ig:hover {
+        color: #fff;
+    }
+    .btn-send:hover {
+        background: #d7af9f;
+        border: 4px solid #d7af9f;
+        color: #fff;
+    }
 }
 
 
