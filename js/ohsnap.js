@@ -17,28 +17,28 @@
  *    duration: duration of the notification in ms. Default 5000ms
  *    container-id: id of the alert container. Default 'ohsnap'
  *    fade-duration: duration of the fade in/out of the alerts. Default 'fast'
-*/
+ */
 function ohSnap(text, options) {
-  var defaultOptions = {
-    'color'       : null,     // color is  CSS class `alert-color`
-    'icon'        : null,     // class of the icon to show before the alert text
-    'duration'    : '3000',   // duration of the notification in ms
-    'container-id': 'ohsnap', // id of the alert container
-    'fade-duration': 'fast',  // duration of the fade in/out of the alerts. fast, slow or integer in ms
-  }
+    var defaultOptions = {
+        'color': null, // color is  CSS class `alert-color`
+        'icon': null, // class of the icon to show before the alert text
+        'duration': '2000', // duration of the notification in ms
+        'container-id': 'ohsnap', // id of the alert container
+        'fade-duration': 'fast', // duration of the fade in/out of the alerts. fast, slow or integer in ms
+    }
 
-  options = (typeof options == 'object') ? $.extend(defaultOptions, options) : defaultOptions;
+    options = (typeof options == 'object') ? $.extend(defaultOptions, options) : defaultOptions;
 
-  var $container = $('#'+options['container-id']),
-    icon_markup = "",
-    color_markup = "";
+    var $container = $('#' + options['container-id']),
+        icon_markup = "",
+        color_markup = "";
 
     if (options.icon) {
         icon_markup = "<span class='" + options.icon + "'></span> ";
     }
 
     if (options.color) {
-      color_markup = 'alert-' + options.color;
+        color_markup = 'alert-' + options.color;
     }
 
     // Generate the HTML
@@ -67,7 +67,7 @@ function ohSnap(text, options) {
  */
 function ohSnapX(element, options) {
     defaultOptions = {
-      'duration': 'fast'
+        'duration': 'fast'
     }
 
     options = (typeof options == 'object') ? $.extend(defaultOptions, options) : defaultOptions;

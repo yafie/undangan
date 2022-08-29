@@ -176,6 +176,7 @@ canvas {
     color: #6d6d6d;
     font-size: 10px;
     border-radius: 100%;
+    cursor: pointer;
 }
 
 .bar-icon {
@@ -1062,10 +1063,10 @@ li span {
 
 .alert {
     padding: 15px;
-    /* margin-top: 5rem; */
     border: 1px solid #eed3d7;
     border-radius: 10px;
     position: absolute;
+    right: 10vh;
     top: 50vh;
     /* Each alert has its own width */
     float: right;
@@ -1075,6 +1076,7 @@ li span {
     text-transform: uppercase;
     text-align: center;
     z-index: 999;
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
 }
 
 .alert-red {
@@ -1232,6 +1234,43 @@ li span {
 /* Large devices (tabs, 992px and down) */
 
 @media only screen and (max-width: 992px) {
+    .alert {
+        padding: 15px;
+        border: 1px solid #eed3d7;
+        border-radius: 10px;
+        position: absolute;
+        right: unset;
+        top: 50vh;
+        /* Each alert has its own width */
+        float: right;
+        clear: right;
+        background-color: white;
+        letter-spacing: normal;
+        text-transform: uppercase;
+        text-align: center;
+        z-index: 999;
+        filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+    }
+    .alert-red {
+        color: white;
+        background-color: #DA4453;
+    }
+    .alert-green {
+        color: white;
+        background-color: #37BC9B;
+    }
+    .alert-blue {
+        color: white;
+        background-color: #4A89DC;
+    }
+    .alert-yellow {
+        color: white;
+        background-color: #F6BB42;
+    }
+    .alert-orange {
+        color: white;
+        background-color: #E9573F;
+    }
     .mobile-separator {
         visibility: hidden;
         display: block;
