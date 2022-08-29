@@ -516,7 +516,7 @@ a.btn-white:hover {
     letter-spacing: normal;
     cursor: pointer;
     position: relative;
-    bottom: 2px;
+    bottom: 0.05rem;
 }
 
 .name-doa {
