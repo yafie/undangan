@@ -792,8 +792,8 @@ span.w3-button:hover {
     }
 }
 
-@keyframes flickerAnimation {
-    /* flame pulses */
+
+/* @keyframes flickerAnimation {
     0% {
         opacity: 1;
     }
@@ -808,7 +808,7 @@ span.w3-button:hover {
 .animate-flicker {
     opacity: 1;
     animation: flickerAnimation 5s infinite;
-}
+} */
 
 .block-image {
     width: 285px;
@@ -1008,42 +1008,6 @@ li span {
     border-radius: 10px;
 }
 
-
-/* radio button css */
-
-input[type="radio"]:after {
-    cursor: pointer;
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    top: -2px;
-    left: -1px;
-    position: relative;
-    background-color: #c9c9c9;
-    content: "";
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-input[type="radio"]:checked:after {
-    cursor: pointer;
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    top: -2px;
-    left: -1px;
-    position: relative;
-    background-color: #d7af9f;
-    content: "";
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
 .buka-udangan {
     display: none;
 }
@@ -1100,6 +1064,7 @@ input[type="radio"]:checked:after {
     letter-spacing: normal;
     text-transform: uppercase;
     text-align: center;
+    z-index: 99;
 }
 
 .alert-red {
@@ -1484,7 +1449,7 @@ input[type="radio"]:checked:after {
         margin-top: -220px;
     }
     .the-wedding-title {
-        font-size: 96px;
+        font-size: 6rem;
         font-weight: 600;
         margin-bottom: 6rem;
     }
@@ -1572,7 +1537,7 @@ input[type="radio"]:checked:after {
         padding: 22px 0 !important;
     }
     .the-wedding-title {
-        font-size: 80px;
+        font-size: 5rem;
         font-weight: 600;
         margin-bottom: 6rem;
     }
