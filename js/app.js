@@ -49,6 +49,7 @@ $(document).ready(function() {
         } else {
             
             $("#submit").prop('disabled', true);
+            $("#submit").addClass("button--loading");
             
             $.ajax({
                 type: 'POST',
@@ -78,6 +79,7 @@ $(document).ready(function() {
                                 $("#nama").val("");
                                 $("#lokasi").val("");
                                 $("#ucapan").val("");
+                                $("#submit").removeClass("button--loading");
                             },
                         });
                     }
