@@ -28,7 +28,6 @@ $(document).ready(function() {
     $('#submit').css('cursor','pointer');
 
     $(document).on('click', '#submit', function (event) {
-        $("#submit").prop('disabled', true);
         event.preventDefault();
         var kehadiran;
         if ($("#hadir").prop("checked")) kehadiran = "hadir";
@@ -48,7 +47,9 @@ $(document).ready(function() {
         } else if (ucapan == "") {
             ohSnap('Ucapan harus diisi', { color: 'red' });
         } else {
-
+            
+            $("#submit").prop('disabled', true);
+            
             $.ajax({
                 type: 'POST',
                 url: "./php/insert.php",
