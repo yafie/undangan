@@ -27,7 +27,8 @@ $(document).ready(function() {
 
     $('#submit').css('cursor','pointer');
 
-    $(document).on('click', '#submit',  function(event) {
+    $(document).on('click', '#submit', function (event) {
+        $("#submit").prop('disabled', true);
         event.preventDefault();
         var kehadiran;
         if ($("#hadir").prop("checked")) kehadiran = "hadir";
@@ -76,7 +77,6 @@ $(document).ready(function() {
                                 $("#nama").val("");
                                 $("#lokasi").val("");
                                 $("#ucapan").val("");
-                                $("#submit").prop('disabled', true);
                             },
                         });
                     }
