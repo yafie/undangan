@@ -25,9 +25,9 @@ $(document).ready(function() {
     });
 
 
-    $('#submit').css('cursor','pointer');
+    $('#submit').css('cursor', 'pointer');
 
-    $(document).on('click', '#submit', function (event) {
+    $(document).on('click', '#submit', function(event) {
         event.preventDefault();
         var kehadiran;
         if ($("#hadir").prop("checked")) kehadiran = "hadir";
@@ -47,10 +47,10 @@ $(document).ready(function() {
         } else if (ucapan == "") {
             ohSnap('Ucapan harus diisi', { color: 'red' });
         } else {
-            
+
             $("#submit").prop('disabled', true);
             $("#submit").addClass("button--loading");
-            
+
             $.ajax({
                 type: 'POST',
                 url: "./php/insert.php",
@@ -92,7 +92,7 @@ $(document).ready(function() {
     });
 
     let mql = window.matchMedia('(min-width: 992px)');
-    console.log(mql)
+    // console.log(mql)
 
     if (mql.matches == false) {
         $("#id02").hide();
@@ -102,27 +102,27 @@ $(document).ready(function() {
 
 });
 
-$("#click-date").click(function () {
+$("#click-date").click(function() {
     let linkDate = document.getElementById("date-id");
     linkDate.scrollIntoView();
 });
 
-$("#click-love").click(function () {
+$("#click-love").click(function() {
     let linkDate = document.getElementById("love-id");
     linkDate.scrollIntoView();
 });
 
-$("#click-maps").click(function () {
+$("#click-maps").click(function() {
     let linkDate = document.getElementById("maps-id");
     linkDate.scrollIntoView();
 });
 
-$("#click-instagram").click(function () {
+$("#click-instagram").click(function() {
     let linkDate = document.getElementById("instagram-id");
     linkDate.scrollIntoView();
 });
 
-$("#click-doa").click(function () {
+$("#click-doa").click(function() {
     let linkDate = document.getElementById("doa-id");
     linkDate.scrollIntoView();
 });
